@@ -37,7 +37,7 @@ public class ChoixJoueur {
 					
 					System.out.println("Vous avez passé votre tour ");
 					Game.afficherLePotCommun();
-					rep =1;
+					rep = 1;
 					
 				}
 				
@@ -47,7 +47,6 @@ public class ChoixJoueur {
 			}
 			
 		}
-		
 		
 	}
 }

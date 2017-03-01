@@ -14,10 +14,11 @@ public class SaisirEtVerifierMot {
 		this.joueur2 = joueur2;
 	}
 	
-	public void saisirEtVerifierMot() {
+	public int saisirEtVerifierMot() {
 		
 		Lettre nouvelleLettre = new Lettre('n',1);
 		Lettre lettre = new Lettre('n',1);
+		
 		lettre.tableau();
 		String fichierPath = "src/main/java/fr/esiea/unique/debout/naudet/dico.txt";
 		Fichier fichier = new Fichier(fichierPath);
@@ -63,5 +64,6 @@ public class SaisirEtVerifierMot {
 			Game.afficherLePotCommun();
 			Mots.afficherLeTableauDeMot();
 		}
+		return 0;
 	}
 }

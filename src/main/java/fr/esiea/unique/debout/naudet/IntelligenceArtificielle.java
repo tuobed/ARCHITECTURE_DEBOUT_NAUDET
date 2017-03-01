@@ -68,6 +68,7 @@ public class IntelligenceArtificielle {
 		catch (Exception e){
 			System.out.println(e.toString());
 		}
+		
 	}
 	
 }

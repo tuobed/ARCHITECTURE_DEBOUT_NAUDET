@@ -13,7 +13,7 @@ Player joueur2 = new Player(false);
 	}
 
 	
-	public void main(int mode) {
+	public int main(int mode) {
 				
 		joueur1.player = 1;
 		joueur2.player = 2;
@@ -56,7 +56,7 @@ Player joueur2 = new Player(false);
 		}
 
 		
-		
+		return 0;
 
 	}
 

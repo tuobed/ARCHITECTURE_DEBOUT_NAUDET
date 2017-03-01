@@ -11,7 +11,7 @@ Player joueur1 = new Player(false);
 Player joueur2 = new Player(false);
 
 	
-	public static void remplirLePotCommun (Lettre lettre) {
+	public static int remplirLePotCommun (Lettre lettre) {
 		int flag=0;
 		int flag2=0;
 		for(int i = 0; i<potCommun.length; i++) {
@@ -31,6 +31,7 @@ Player joueur2 = new Player(false);
 					}
 			}
 		}
+		return flag;
 	}
 	
 	public static void remplirLePotCommunTemp() {
