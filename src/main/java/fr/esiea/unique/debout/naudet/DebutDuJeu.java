@@ -1,8 +1,10 @@
 package fr.esiea.unique.debout.naudet;
 
-//import java.util.Scanner;
-public class DebutDuJeu {
 
+public class DebutDuJeu {
+//cette classe va simuler le premier tour. En effet, le premier tour est different du reste
+// c'est pourquoi je l'ai séparé du reste du jeu.
+// Les 2 joueurs tirent une lettre, la plus petite commence.
 	
 Player joueur1 = new Player(false);
 Player joueur2 = new Player(false);

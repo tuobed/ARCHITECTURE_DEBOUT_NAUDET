@@ -1,11 +1,12 @@
 package fr.esiea.unique.debout.naudet;
 
-//import java.util.Scanner;
 
 public class Game {
+// Cette classe est la plus importante, elle va traiter toutes les fonctions liées à mon potCommun.
+//Elle va également lancer toute la structure du jeu dans la fonction Main()
 	
-public static Lettre potCommun[] = new Lettre [25];
-public static Lettre potCommunTemp[] = new Lettre [25];
+public static Lettre potCommun[] = new Lettre [26];
+public static Lettre potCommunTemp[] = new Lettre [26];
 
 Player joueur1 = new Player(false);
 Player joueur2 = new Player(false);
@@ -16,9 +17,10 @@ Player joueur2 = new Player(false);
 		int flag2=0;
 		for(int i = 0; i<potCommun.length; i++) {
 			if(potCommun[i] != null && potCommun[i].letter == lettre.letter && flag==0) {
-				potCommun[i].nombre++; 
+				potCommun[i].nombre = potCommun[i].nombre +1; 
 				flag = 1;
 				flag2=1;
+				
 			}
 		}
 		if(flag2==0) {
@@ -28,6 +30,7 @@ Player joueur2 = new Player(false);
 						potCommun[i].letter = lettre.letter;
 						potCommun[i].nombre = 1;
 						flag = 1;
+						
 					}
 			}
 		}
@@ -36,22 +39,22 @@ Player joueur2 = new Player(false);
 	
 	public static void remplirLePotCommunTemp() {
 	
-		for(int i=0; i<potCommun.length; i++) {
+		for(int i=0; i<potCommunTemp.length; i++) {
 			if(potCommun[i] != null) {
-				potCommunTemp[i] = potCommun[i];
-				potCommunTemp[i].letter = potCommun[i].letter;
-				potCommunTemp[i].nombre = potCommun[i].nombre;
+				potCommunTemp[i] =  new Lettre(potCommun[i].letter,potCommun[i].nombre);
+				//potCommunTemp[i].nombre = potCommun[i].nombre;
+				//potCommunTemp[i].letter = potCommun[i].letter;
 			}
 		}
+		return;
 	
 	}
 	
 	public static void viderLePotCommunTemp() {
 		
-		for(int i=0; i<potCommun.length; i++) {
-			if(potCommun[i] != null) {
+		for(int i=0; i<potCommunTemp.length; i++) {
+			if(potCommunTemp[i] != null) {
 				potCommunTemp[i] = null;
-
 			}
 		}
 	
@@ -61,34 +64,25 @@ Player joueur2 = new Player(false);
 		word=word.toUpperCase();
 		int length = word.length();
 		int i, j;
-		boolean quit = false;
 		char result;
 		int count = 0;
-		//potCommunTemp[] = potCommun[];
+		
 		remplirLePotCommunTemp();
 		
 		for(i=0; i<length; i++) {
 			result = word.charAt(i);
 			for(j=0; j<25; j++) {
 				
-				try {
 					if(potCommunTemp[j] != null && potCommunTemp[j].letter == result) {
-						if(potCommunTemp[j].nombre == 1) {
-							potCommunTemp[j] = null;
+						if(potCommunTemp[j].nombre>1)  {
+							potCommunTemp[j].nombre --;	
 						}
-						else {
-							potCommunTemp[j].nombre --;
+						else  {
+							potCommunTemp[j] = null;	
 						}
 						count ++;
 						break;
 					}								
-				}
-				catch (Exception e) {
-					System.out.println(e.toString());
-				}	
-			}
-			if( quit) {
-				break;
 			}
 		}
 		if(count == length) {
@@ -96,7 +90,6 @@ Player joueur2 = new Player(false);
 			return 1;
 		}
 		else {
-			//System.out.println("Certaines lettres ne sont pas dans le pot commun");
 			viderLePotCommunTemp();
 			return 0;
 		}
@@ -114,14 +107,15 @@ Player joueur2 = new Player(false);
 				
 				try {
 					if(potCommun[j] != null && potCommun[j].letter == result) {
-						if(potCommun[j].nombre == 1) {
-							potCommun[j] = null;
-							break;
-						}
-						else {
+						if(potCommun[j].nombre>1) {
 							potCommun[j].nombre --;
 							break;
 						}
+						else if(potCommun[j].nombre == 1) {
+							potCommun[j] = null;
+							break;
+						}
+						
 					}
 				}
 				catch (Exception e) {

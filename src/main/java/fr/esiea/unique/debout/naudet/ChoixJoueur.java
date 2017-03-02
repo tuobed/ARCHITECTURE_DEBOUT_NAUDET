@@ -4,6 +4,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ChoixJoueur {
+	//Cette classe va demander au joueur si il veut passer ou entrer un mot
+
 
 	Player joueur1 = new Player(false);
 	Player joueur2 = new Player(false);

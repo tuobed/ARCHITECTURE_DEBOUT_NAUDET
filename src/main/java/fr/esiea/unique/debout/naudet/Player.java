@@ -2,6 +2,7 @@ package fr.esiea.unique.debout.naudet;
 
 
 public class Player {
+//Cette classe va définir l'objet Player.
 
 	public int player;
 	public int nbMot;

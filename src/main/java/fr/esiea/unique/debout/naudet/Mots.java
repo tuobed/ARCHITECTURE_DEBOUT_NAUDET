@@ -2,7 +2,9 @@ package fr.esiea.unique.debout.naudet;
 
 
 public class Mots {
-
+//Cette classe va traiter la partie "vole de mot". On stock les mots dans un tableau "motsCommuns"
+//On regarde si la chaine de caractère du mot saisit contient un des mots du tableau "motsCommuns"
+	
 	//19 mots maximum dans une partie
 	public static String motsCommuns[] = new String [20];
 	public String mot;

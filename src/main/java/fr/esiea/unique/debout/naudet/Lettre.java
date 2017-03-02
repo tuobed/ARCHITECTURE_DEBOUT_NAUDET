@@ -2,6 +2,9 @@ package fr.esiea.unique.debout.naudet;
 
 
 public class Lettre {
+	//cette classe va permettre de récupérer une lettre aléatoirement et de comparer 2 lettres (savoir laquelle est la plus petite).
+	//Les lettres sont ici stockées dans un tableau de 26 cases (26 lettres).
+	// Le ".nombre" correspond au nombre d'occurences d'une même lettre. le ".lettre" correspond à la lettre en elle même.
 
 	public Lettre letterTab[] = new Lettre[26];
 	

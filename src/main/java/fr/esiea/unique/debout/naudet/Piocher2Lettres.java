@@ -3,6 +3,9 @@ package fr.esiea.unique.debout.naudet;
 
 public class Piocher2Lettres {
 
+	//Cette classe va permettre au joueur de piocher 2 lettres
+	//Elle a été créé dans le but d'aérer mon code
+	
 	public static void piocher2Lettres() {
 		
 		Lettre nouvelleLettre1 = new Lettre('n',1);

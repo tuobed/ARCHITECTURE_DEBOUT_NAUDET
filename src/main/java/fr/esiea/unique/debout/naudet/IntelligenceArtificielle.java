@@ -8,6 +8,11 @@ import java.util.StringTokenizer;
 
 public class IntelligenceArtificielle {
 	
+	// Cette classe va traiter la partie autonome de mon programme. Celle de l'IA.
+	//Le fonctionnement de l'IA est le suivant. L'IA va tester chaque mot du dictionnaire.
+	//Si le mot respect les conditions (toutes les lettres dans le pot commun) alors l'IA prend ce mot
+	// J'ai rajouté 50% de chance que l'IA passe son tour
+	
 	Player joueurIA = new Player(false);
 	
 	public IntelligenceArtificielle(Player joueurIA) {
@@ -33,8 +38,10 @@ public class IntelligenceArtificielle {
 				while(st.hasMoreElements()) {
 						mot = st.nextToken();
 						mot = mot.toLowerCase();
-						int resultPotCommun = Game.checkTheWordPotCommun(mot);		
-						if(resultPotCommun == 1) {
+						int resultPotCommun = Game.checkTheWordPotCommun(mot);	
+						int random = (int)( Math.random()*(26));
+						// On intègre 50% de chance que l'IA passe son tour
+						if(resultPotCommun == 1 && random%2 == 0) {
 							System.out.println("");
 							System.out.println("L'IA a trouvé le mot: " + mot);
 							joueurIA.nbMot++;

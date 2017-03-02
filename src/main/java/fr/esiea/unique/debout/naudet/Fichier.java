@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Fichier {
-
+//Cette classe va permettre de vérifier dans le dictionnaire si un mot existe ou non
 	public String fileName;
 	
 	
@@ -32,7 +32,7 @@ public class Fichier {
 					if(st.nextToken().equals(mot)) {
 						flag = 1;
 						System.out.println("");
-						System.out.println("Votre mot est correct");
+						//System.out.println("Votre mot est correct");
 						
 					}
 					
@@ -40,8 +40,8 @@ public class Fichier {
 			}
 			if(flag != 1) {
 				System.out.println("");
-				System.out.println("Votre mot n'existe pas");
-				
+				//System.out.println("Votre mot n'existe pas");
+				flag =0;
 			}
 			br.close(); 
 		}		

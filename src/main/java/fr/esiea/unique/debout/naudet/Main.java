@@ -4,11 +4,10 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
-
-	//private static Scanner sc;
+//C'est la classe principale qui lance le programme
+	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 	
 		int x; int rep=0;
 		Scanner sc = null;
@@ -36,7 +35,6 @@ public class Main {
 				}
 		}
 		
-		//System.out.println(easy);
 		sc.close();
 
 	}
