@@ -46,7 +46,6 @@ Player joueur2 = new Player(false);
 				//potCommunTemp[i].letter = potCommun[i].letter;
 			}
 		}
-		return;
 	
 	}
 	
@@ -154,7 +153,7 @@ Player joueur2 = new Player(false);
 		String fichierPath = "src/main/java/fr/esiea/unique/debout/naudet/dico.txt";
 		//Fichier fichier = new Fichier(fichierPath);
 		
-		while(joueur1.nbMot!=10 && joueur2.nbMot != 10) {
+		while(joueur1.nbMot<10 && joueur2.nbMot < 10) {
 			System.out.println("");
 			System.out.println("Joueur 1 ton score:" + joueur1.nbMot);
 			System.out.println("Joueur 2 ton score:" + joueur2.nbMot);
@@ -200,15 +199,15 @@ Player joueur2 = new Player(false);
 			
 			
 		}
-		if(joueur1.nbMot == 10) {
+		if(joueur1.nbMot < 10) {
 			System.out.println("");
 			System.out.println("");
-			System.out.println("Joueur 1 vous avez gagné");
+			System.out.println("Joueur 2 vous avez gagné");
 		}
 		else {
 			System.out.println("");
 			System.out.println("");
-			System.out.println("Joueur 2 vous avez gagné");
+			System.out.println("Joueur 1 vous avez gagné");
 		}
 	}
 }

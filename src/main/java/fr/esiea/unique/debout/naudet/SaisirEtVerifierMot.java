@@ -37,7 +37,7 @@ public class SaisirEtVerifierMot {
 		int resultDictionary = fichier.checkIfWordCorrect(fichierPath, mot);
 		int resultMotsCommuns = Mots.verifierSiMotDansMotsCommuns(mot);
 		
-		if((resultPotCommun == 1 && resultDictionary == 1) || (resultDictionary == 1 && resultMotsCommuns == 1)) {
+		if(resultPotCommun == 1 && resultDictionary == 1 || resultDictionary == 1 && resultMotsCommuns == 1) {
 			
 			System.out.println("Bien joué, votre mot est correct !");
 			Game.updatePotCommun(mot);

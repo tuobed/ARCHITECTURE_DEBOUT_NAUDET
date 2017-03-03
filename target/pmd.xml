@@ -1,16 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="5.5.1" timestamp="2017-03-03T14:49:41.510">
-<file name="C:\Users\Guill\workspace\LetterGame\src\main\java\fr\esiea\unique\debout\naudet\Game.java">
-<violation beginline="49" endline="49" begincolumn="17" endcolumn="23" rule="UnnecessaryReturn" ruleset="Unnecessary" package="fr.esiea.unique.debout.naudet" class="Game" method="remplirLePotCommunTemp" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UnnecessaryReturn" priority="3">
-Avoid unnecessary return statements
-</violation>
-</file>
-<file name="C:\Users\Guill\workspace\LetterGame\src\main\java\fr\esiea\unique\debout\naudet\SaisirEtVerifierMot.java">
-<violation beginline="40" endline="40" begincolumn="21" endcolumn="65" rule="UselessParentheses" ruleset="Unnecessary" package="fr.esiea.unique.debout.naudet" class="SaisirEtVerifierMot" method="saisirEtVerifierMot" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
-Useless parentheses.
-</violation>
-<violation beginline="40" endline="40" begincolumn="72" endcolumn="118" rule="UselessParentheses" ruleset="Unnecessary" package="fr.esiea.unique.debout.naudet" class="SaisirEtVerifierMot" method="saisirEtVerifierMot" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
-Useless parentheses.
-</violation>
-</file>
+<pmd version="5.5.1" timestamp="2017-03-03T18:43:30.669">
 </pmd>

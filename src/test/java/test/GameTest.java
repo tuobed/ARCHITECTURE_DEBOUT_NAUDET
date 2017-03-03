@@ -10,6 +10,7 @@ import fr.esiea.unique.debout.naudet.Lettre;
 
 public class GameTest {
 
+	
 	@Test
 	public void testRemplirLePotCommun () {
 		int result;		
