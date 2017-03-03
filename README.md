@@ -3,9 +3,12 @@
 Projet réalisé par :
 
 Debout Guillaume TCSI2 4A ESIEA 
+
 Naudet Olivier TCSE2 4A ESIEA 
 
+
 Comment compiler et lancer le projet ?
+
 
 Tout d'abord, vous devez télécharger le code source du projet en cliquant sur le bouton "Clone or download" > "Download zip". Après avoir lancé l'extration du ".zip", on ouvre un nouveau terminal. Pour compiler et lancer ce projet, vous devez avoir au minimum Java 8 sur votre machine (+ javac). Il vous faudra aussi avoir Maven.
 
@@ -15,6 +18,7 @@ Placez-vous dans le dossier principal (l'endroit ou se trouve le "pom.xml"), et 
 'mvn -q test' pour lancer l'ensemble des tests unitaires
 'mvn -q exec:java' pour exécuter le programme.
 'mvn -q jxr:jxr && mvn -q pmd:check || xdg-open ./target/site/pmd.html'
+
 
 Explication sur l'architecture utilisée
 
@@ -35,7 +39,6 @@ Nous avons utilisé 'Maven' pour la gestion du projet. Nous travaillons avec un 
 
 Un package test est également disponible et permets la réalisation de tests unitaires via JUnit.
 Pour le code coverage, nous avons installer le plugin EclEmma.
-
 
 
 
