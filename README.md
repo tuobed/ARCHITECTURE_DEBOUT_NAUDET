@@ -14,10 +14,13 @@ Tout d'abord, vous devez télécharger le code source du projet en cliquant sur 
 
 Placez-vous dans le dossier principal (l'endroit ou se trouve le "pom.xml"), et lancez :
 
-'mvn -q compile' pour compiler le programme (le -q permet de rendre Maven un peu moins bavard).
-'mvn -q test' pour lancer l'ensemble des tests unitaires
+'mvn -q compile' pour compiler le programme.
+
+'mvn -q test' pour lancer l'ensemble des tests unitaires.
+
 'mvn -q exec:java' pour exécuter le programme.
-'mvn -q jxr:jxr && mvn -q pmd:check || xdg-open ./target/site/pmd.html'
+
+'mvn -q jxr:jxr && mvn -q pmd:check || xdg-open ./target/site/pmd.html' Pour lancer l'analyse statique du code.
  
  
 Explication sur l'architecture utilisée
@@ -46,8 +49,9 @@ Nous avons utilisé 'Maven' pour la gestion du projet. Nous travaillons avec un 
 
 "SaisirEtVerifierMot" : Cette classe est très importante, elle va demander au joueur de saisir un mot. Elle évaluera également si le mot est correct (les lettres dans le pot commun, le mot dans le dictionnaire ...) ou alors si la chaine de caratère du mot contient un des mots appartenant au tableau "motsCommuns" c.a.d si la ou les mots trouvés sont contenu.
 
-Un package test est également disponible et permets la réalisation de tests unitaires via JUnit.
-Pour le code coverage, nous avons installer le plugin EclEmma.
+
+Un package "test" est également disponible et permets la réalisation de tests unitaires via JUnit.
+Pour le code coverage, nous avons installé le plugin EclEmma. 38,7% du code est testé.
  
   
  
@@ -61,10 +65,7 @@ Le second le factory. Nous avons instancier plusieurs fois les lettres appartena
 Nous avons également essayé de respecter les principes SOLID. Cependant ayant déjà fait le code il était compliqué de revenir en arrière. Nous avons donc essayer de respecter le fait que chaque méthodes doivent avoir une seule responsabilité. Par exemple la méthode compareLetter de la classe Letter permets uniquement de comparer deux lettres. 
  
  
- 
-Utilisation de PMD
-
-Nous avons installé le plugin sous Eclipse. Nous pouvons donc faire une analyse statique du code via Eclipse en faisant un clique droit sur le projet -> PMD -> Analyser le code. Je n'ai malheureusement pas réussit à faire marcher l'analyse statique du code en ligne de commande. 
+  
 
 
 
