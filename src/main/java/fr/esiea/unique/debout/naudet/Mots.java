@@ -6,7 +6,7 @@ public class Mots {
 //On regarde si la chaine de caractère du mot saisit contient un des mots du tableau "motsCommuns"
 	
 	//19 mots maximum dans une partie
-	public static String motsCommuns[] = new String [20];
+	private static String motsCommuns[] = new String [20];
 	public String mot;
 	
 	public static void remplirLeTableauDeMot(String mot) {

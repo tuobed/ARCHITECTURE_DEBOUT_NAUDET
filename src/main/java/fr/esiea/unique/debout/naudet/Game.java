@@ -5,8 +5,8 @@ public class Game {
 // Cette classe est la plus importante, elle va traiter toutes les fonctions liées à mon potCommun.
 //Elle va également lancer toute la structure du jeu dans la fonction Main()
 	
-public static Lettre potCommun[] = new Lettre [26];
-public static Lettre potCommunTemp[] = new Lettre [26];
+private static Lettre potCommun[] = new Lettre [26];
+private static Lettre potCommunTemp[] = new Lettre [26];
 
 Player joueur1 = new Player(false);
 Player joueur2 = new Player(false);

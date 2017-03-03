@@ -24,13 +24,13 @@ public class ChoixJoueur {
 		while(rep==0 ) {
 			
 			try {
-				System.out.println(" ");
+				System.out.println("");
 				System.out.println("Taper 1 pour entrer un mot, ou 2 pour passer son tour");
 				sc = new Scanner(System.in);
 				x = sc.nextInt();
 				
 				if(x==1) {
-					SaisirEtVerifierMot sevm = new SaisirEtVerifierMot(joueur1,joueur2);
+					final SaisirEtVerifierMot sevm = new SaisirEtVerifierMot(joueur1,joueur2);
 					sevm.saisirEtVerifierMot();
 					rep = 1;
 					

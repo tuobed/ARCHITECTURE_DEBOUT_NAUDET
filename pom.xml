@@ -16,8 +16,27 @@
 
   <build>
     <plugins>
+    
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.7</version>
+        <configuration>
+          <linkXref>true</linkXref>
+          <targetJdk>1.8</targetJdk>
+          <sourceEncoding>UTF-8</sourceEncoding>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+              <goal>cpd-check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      
+       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.1</version>
         <configuration>
@@ -25,7 +44,6 @@
           <target>${java.version}</target>
         </configuration>
       </plugin>
-      
       <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>

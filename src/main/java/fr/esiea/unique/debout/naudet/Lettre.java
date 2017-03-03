@@ -6,7 +6,7 @@ public class Lettre {
 	//Les lettres sont ici stockées dans un tableau de 26 cases (26 lettres).
 	// Le ".nombre" correspond au nombre d'occurences d'une même lettre. le ".lettre" correspond à la lettre en elle même.
 
-	public Lettre letterTab[] = new Lettre[26];
+	private Lettre letterTab[] = new Lettre[26];
 	
 	//[a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z]
 	
