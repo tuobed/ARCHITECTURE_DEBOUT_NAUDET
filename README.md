@@ -6,6 +6,9 @@ Debout Guillaume TCSI2 4A ESIEA
 
 Naudet Olivier TCSE2 4A ESIEA 
 
+Dû a une erreur, nous avons également un second repository ou vous pourrez voir les étapes de l'avancement du projet:
+https://github.com/naudet/ARCHITECTURE_LOGICIEL_DEBOUT_NAUDET
+
 
 Comment compiler et lancer le projet ?
 
@@ -64,27 +67,3 @@ Le second le factory. Nous avons instancier plusieurs fois les lettres appartena
  
 Nous avons également essayé de respecter les principes SOLID. Cependant ayant déjà fait le code il était compliqué de revenir en arrière. Nous avons donc essayer de respecter le fait que chaque méthodes doivent avoir une seule responsabilité. Par exemple la méthode compareLetter de la classe Letter permets uniquement de comparer deux lettres. 
  
- 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
