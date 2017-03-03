@@ -27,14 +27,23 @@ Nous avons utilisé 'Maven' pour la gestion du projet. Nous travaillons avec un 
 "Lettre" : Permets la contruction de l'objet "Lettre", la création du tableau contenant les lettres, de l'attribution d'une lettre au hasard et de la comparaison entre deux lettres.
 
 "ChoixJoueur" : Cette classe permets d'aérer mon code et demande au joueur si il veut passer son tour ou entrer un mot.
+
 "DebutDuJeu" : Cette classe permets le lancement du début du jeu. (choisir qui commence, simuler le premier tour).
-"Fichier" : Construit l'objet Fichier. Cette classe va également permettre de vérifier dans le dictionnaire si un mot existe ou non
+
+"Fichier" : Construit l'objet Fichier. Cette classe va également permettre de vérifier dans le dictionnaire si un mot existe ou non.
+
 "Game" : Cette classe est la plus importante, elle va traiter toutes les fonctions liées au potCommun. Elle va également lancer toute la structure du jeu dans la fonction Main().
+
 "Main" : Classe principale qui lance mon jeu et demande le mode auquel le joueur veut jouer.
+
 "IntelligenceArtificielle" : Cette classe va traiter la partie autonome de mon programme. Celle de l'IA. Le fonctionnement de l'IA est le suivant: L'IA va tester chaque mot du dictionnaire. Si le mot respect les conditions (toutes les lettres dans le pot commun) alors l'IA prend ce mot. Nous avons rajouté 50% de chance que l'IA passe son tour.
+
 "Mots" : Cette classe va traiter la partie "vole de mot".
+
 "Piocher2Lettre" : Cette classe permets également d'aérer mon code et demande simplement au joueur de piocher deux lettres.
+
 "Player" : Cette classe va créer l'objet Player.
+
 "SaisirEtVerifierMot" : Cette classe est très importante, elle va demander au joueur de saisir un mot. Elle évaluera également si le mot est correct (les lettres dans le pot commun, le mot dans le dictionnaire ...) ou alors si la chaine de caratère du mot contient un des mots appartenant au tableau "motsCommuns" c.a.d si la ou les mots trouvés sont contenu.
 
 Un package test est également disponible et permets la réalisation de tests unitaires via JUnit.
